@@ -14,6 +14,12 @@ You'll use the same workflow to solve every lab on Learn. It involves 3 steps:
 
 Let's walk through the process. For now, just read along. **You don't need to actually perform any actions right now**. You'll have the opportunity to practice this entire workflow in the next lesson!
 
+## Prefatory Remark for Windows Users
+
+Whenever we refer to "opening a terminal", you should open Git Bash, which was installed during the initial setup lesson. Git Bash emulates a Unix-y environment on your Windows machine, meaning that as long as you're programming in this terminal, you can basically follow along with everything we're doing here. Pretty sweet!
+
+![git bash](git_bash.png)
+
 ## Opening a Lab
 
 **Fork and clone a lab to get started**
