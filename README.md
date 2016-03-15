@@ -14,11 +14,24 @@ You'll use the same workflow to solve every lab on Learn. It involves 3 steps:
 
 Let's walk through the process. For now, just read along. **You don't need to actually perform any actions right now**. You'll have the opportunity to practice this entire workflow in the next lesson!
 
+## TL;DR
+
+Learn provides wrappers for common interactions between git and the Learn platform in the form of `learn`, `learn submit`, and `learn-test`. Windows users can only use the last command.
+
+If you'd rather dig deep and perform these interactions yourself, here's what you need to do:
+
+- Fork the lab on GitHub and clone your fork locally
+- Run tests (`learn-test` or `ant test`)
+- Write your code
+- When tests pass, commit your changes, push them to your GitHub, and open a pull request to the upstream repository (the repo that you forked from)
+
+For a more detailed overview, read on.
+
 ## Prefatory Remark for Windows Users
 
 Whenever we refer to "opening a terminal", you should open Git Bash, which was installed during the initial setup lesson. Git Bash emulates a Unix-y environment on your Windows machine, meaning that as long as you're programming in this terminal, you can basically follow along with everything we're doing here. Pretty sweet!
 
-![git bash](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/git_bash.png)
+![git bash](http://curriculum-content.s3.amazonaws.com/javacs/git_bash.png)
 
 ## Opening a Lab
 
@@ -27,7 +40,7 @@ Whenever we refer to "opening a terminal", you should open Git Bash, which was i
 Getting to work on a new lab is very simple: you'll want to click the "Fork" button on the `learn-co-students` repository, fork a copy to your personal GitHub, and clone from your fork.
 
 The "Fork" button should look something like this:
-![Fork button](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/fork_button.png)
+![Fork button](http://curriculum-content.s3.amazonaws.com/javacs/fork_button.png)
 
 Then `git clone git@github.com:your-usernmame/the-forked-repo.git`
 
@@ -35,7 +48,7 @@ You can then `cd the-forked-repo` to change your current directory to your local
 
 ## Solving a Lab
 
-** Key takeaway: use the `learn` command to run tests until they all pass. **
+** Key takeaway: use the `learn-test` command to run tests until they all pass. **
 
 ### Overview
 
@@ -51,35 +64,21 @@ When you work on a lab, we recommend the following workflow:
 
 Read the lab's README on Learn and get a sense of what the lab is about and what it is asking you to build. Read the entire README and then work on the lab. That way, as you hit hurdles you'll have a context for where to look for clues and hints in the README.
 
-### 2. Run the tests with `learn` (OS X and Linux) or `learn-test` (Windows)
+### 2. Run the tests with `learn-test`
 
-Before doing any work, run the test suite from your local clone with the `learn` or `learn-test` CLI command. From your terminal, in a lab's directory, run `learn-test`, you'll see something similar to:
+Before doing any work, run the test suite from your local clone with the `learn-test` CLI command. From your terminal, in a lab's directory, run `learn-test`, you'll see something similar to:
 
-![test](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/test_command.png)
+![test](http://curriculum-content.s3.amazonaws.com/javacs/test_command.png)
 
-I know error messages or failure messages are intimidating, but try to read them. Developers are detectives, constantly sleuthing for the bug that's the culprit. Errors and failures are our clues, they illuminate the path forward.
+We know error messages or failure messages are intimidating, but try to read them. Developers are detectives, constantly sleuthing for the bug that's the culprit. Errors and failures are our clues, they illuminate the path forward.
 
 We know that the idea of "things being broken" is frightening at first. Broken things are stressful and frustrating! But guess what? As an engineer, as a programmer, the default state of anything you work on is broken. The things you are programming are always broken. Get used to it. Your job is to fix broken things. You can do it. If your code isn't broken, if your code works, you are no longer programming. Your job is done. Things work. Embrace the errors. The obstacle is the way.
 
 ### 3. Read the tests
 
-Read the test suite in `src/` (it should be right next to the source classes).
+Read the test suite in `src/`. (It should be right next to the source classes.)
 
-You haven't even written a line of code yet and we're asking you to read some very abstract and complex code and try to reach for any footing or understanding. We believe in you. We believe you can infer and deduce and understand a bit of the code above, even with no experience. Your mind is  incredibly powerful. Challenge yourself and confront the unknown. That's how learning works.
-
-Beyond all the syntax and code above, can you decipher what we're asking for? What the lab requires you to do? How the test works? Again, even if you only get 10% of the expectations of the test, that's still something. And while you do that, 4 things will happen.
-
-1. You'll have 10% more understanding of how to solve the lab.
-
-2. You'll get better at reading tests and we bet that the next test you read you'll get 12% of it and constantly see improvement through old fashioned practice and determination.
-
-3. Almost unconsciously, like Mr. Miyagi in the Karate Kid, you'll actually learn how to read and write tests proficiently, "Wax on, wax off" style.
-
-	![Wax On, Wax Off](https://38.media.tumblr.com/a5dc9f34d87226be8f31f5c982c8af7b/tumblr_mklzm4VeUq1rwt2uzo1_500.gif)
-
-4. You'll have learned Test-Driven-Development, TDD, one of the most sought after skills of a professional developer.
-
-This cycle, reviewing the README, running the tests, reading failure messages, reading the tests, editing your code, and trying it all again, is how you are supposed to code, it's what programmers do all day. We break things, we define the error with a test, we fix the code, we pass the test, we repeat.
+Beyond all the syntax and code, can you decipher what we're asking for? What the lab requires you to do? How the test works?
 
 ### 4. Write Your Code
 
@@ -108,9 +107,7 @@ Programming is never about getting it all right at once. Programming is like sol
 #### Programming in Movies vs Real Life
 <iframe src="https://vine.co/v/hPXTA6l9AqQ/embed/simple" width="600" height="600" frameborder="0"></iframe>
 
-### 5. Pass your local tests with `learn` or `learn-test`
-
-Follow this workflow: running tests, reading errors, writing code, saving code, running tests, reading errors, consulting the README, googling for more context on a topic, writing more code, saving the code, running the tests again, reading errors, and repeat. You'll get it, you'll surprise yourself and find a confidence within you. And if you're stuck or tired and just need some help, Ask a Question and the Learn community will be there for you.
+### 5. Pass your local tests with `learn-test`
 
 Eventually your local tests will pass and Learn will indicate your success.
 ![Pass](https://s3-us-west-2.amazonaws.com/curriculum-content/intro-to-learn/learn_workflow_local.png)
@@ -127,11 +124,11 @@ Windows users, please follow the steps under [What does `learn submit` do?](#wha
 
 **Key takeaway: use the `learn submit` command to submit your solution.**
 
-Once you've written the code that solves a lab, and confirmed that your solution is correct using the `learn` command, you then need to submit your solution to Learn so that you can get credit for completion and move on to the next lesson.
+Once you've written the code that solves a lab, and confirmed that your solution is correct using the `learn-test` command, you then need to submit your solution to Learn so that you can get credit for completion and move on to the next lesson.
 
 In order to submit your solution to Learn, from the lab's directory in your Terminal, you will just need to run:
 
-```
+```bash
 learn submit
 ```
 
@@ -158,9 +155,9 @@ The `learn submit` and the Learn CLI automate all the low-level `git` interactio
 To summarize, the workflow you'll be using to solve labs on Learn:
 
 Fork and clone the lab locally so you can work on it.
-Use `learn test` (or, for Windows, `learn-test`) to run your local tests.
-Use `learn submit` to submit your solution.**
+Use `learn-test` to run your local tests.
+Use `learn submit` to submit your solution. (On Windows, you'll need to open a pull request manually. It's good practice for *nix users too!)
 
 You are now ready to practice the Learn workflow with your first lab! Congratulations!
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/learn-cli-workflow-osx' title='The Learn CLI Workflow'>The Learn CLI Workflow</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/learn-workflow-java-cs'>Learn Workflow</a> on Learn.co and start learning to code for free.</p>
