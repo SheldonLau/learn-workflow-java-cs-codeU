@@ -21,7 +21,7 @@ Learn provides wrappers for common interactions between git and the Learn platfo
 If you'd rather dig deep and perform these interactions yourself, here's what you need to do:
 
 - Fork the lab on GitHub and clone your fork locally
-- Run tests (`learn` (*nix), `learn-test` (Windows), or `ant test` (all))
+- Run tests (`learn-test` or `ant test`)
 - Write your code
 - When tests pass, commit your changes, push them to your GitHub, and open a pull request to the upstream repository (the repo that you forked from)
 
@@ -48,7 +48,7 @@ You can then `cd the-forked-repo` to change your current directory to your local
 
 ## Solving a Lab
 
-** Key takeaway: use the `learn` command to run tests until they all pass. **
+** Key takeaway: use the `learn-test` command to run tests until they all pass. **
 
 ### Overview
 
@@ -64,9 +64,9 @@ When you work on a lab, we recommend the following workflow:
 
 Read the lab's README on Learn and get a sense of what the lab is about and what it is asking you to build. Read the entire README and then work on the lab. That way, as you hit hurdles you'll have a context for where to look for clues and hints in the README.
 
-### 2. Run the tests with `learn` (OS X and Linux) or `learn-test` (Windows)
+### 2. Run the tests with `learn-test`
 
-Before doing any work, run the test suite from your local clone with the `learn` or `learn-test` CLI command. From your terminal, in a lab's directory, run `learn-test`, you'll see something similar to:
+Before doing any work, run the test suite from your local clone with the `learn-test` CLI command. From your terminal, in a lab's directory, run `learn-test`, you'll see something similar to:
 
 ![test](http://curriculum-content.s3.amazonaws.com/javacs/test_command.png)
 
@@ -107,7 +107,7 @@ Programming is never about getting it all right at once. Programming is like sol
 #### Programming in Movies vs Real Life
 <iframe src="https://vine.co/v/hPXTA6l9AqQ/embed/simple" width="600" height="600" frameborder="0"></iframe>
 
-### 5. Pass your local tests with `learn` or `learn-test`
+### 5. Pass your local tests with `learn-test`
 
 Eventually your local tests will pass and Learn will indicate your success.
 ![Pass](https://s3-us-west-2.amazonaws.com/curriculum-content/intro-to-learn/learn_workflow_local.png)
@@ -124,7 +124,7 @@ Windows users, please follow the steps under [What does `learn submit` do?](#wha
 
 **Key takeaway: use the `learn submit` command to submit your solution.**
 
-Once you've written the code that solves a lab, and confirmed that your solution is correct using the `learn` command, you then need to submit your solution to Learn so that you can get credit for completion and move on to the next lesson.
+Once you've written the code that solves a lab, and confirmed that your solution is correct using the `learn-test` command, you then need to submit your solution to Learn so that you can get credit for completion and move on to the next lesson.
 
 In order to submit your solution to Learn, from the lab's directory in your Terminal, you will just need to run:
 
@@ -155,11 +155,9 @@ The `learn submit` and the Learn CLI automate all the low-level `git` interactio
 To summarize, the workflow you'll be using to solve labs on Learn:
 
 Fork and clone the lab locally so you can work on it.
-Use `learn test` (or, for Windows, `learn-test`) to run your local tests.
+Use `learn-test` to run your local tests.
 Use `learn submit` to submit your solution. (On Windows, you'll need to open a pull request manually. It's good practice for *nix users too!)
 
 You are now ready to practice the Learn workflow with your first lab! Congratulations!
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/learn-cli-workflow-osx' title='The Learn CLI Workflow'>The Learn CLI Workflow</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/learn-workflow-java-cs'>Learn Workflow</a> on Learn.co and start learning to code for free.</p>
