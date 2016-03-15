@@ -156,7 +156,7 @@ To summarize, the workflow you'll be using to solve labs on Learn:
 
 Fork and clone the lab locally so you can work on it.
 Use `learn test` (or, for Windows, `learn-test`) to run your local tests.
-Use `learn submit` to submit your solution.**
+Use `learn submit` to submit your solution. (On Windows, you'll need to open a pull request manually. It's good practice for *nix users too!)
 
 You are now ready to practice the Learn workflow with your first lab! Congratulations!
 
