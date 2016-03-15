@@ -41,7 +41,7 @@ You can then `cd the-forked-repo` to change your current directory to your local
 
 Once you've opened your lab locally, you'll be ready to start solving it. This is the fun part!
 
-All of the labs on Learn are written with an RSpec test suite that you can use to confirm that you've fulfilled the requirements of the lab. RSpec is a testing library that ruby developers use everyday, so again, as you work on Learn, you're also learning the same tools and workflows that developers use.
+All of the labs on Learn are written with an JUnit test suite that you can use to confirm that you've fulfilled the requirements of the lab. JUnit is a testing library that Java developers use everyday, so again, as you work on Learn, you're also learning the same tools and workflows that developers use.
 
 ## Test Driven Workflow
 
