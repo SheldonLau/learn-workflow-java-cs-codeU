@@ -18,7 +18,7 @@ Let's walk through the process. For now, just read along. **You don't need to ac
 
 Whenever we refer to "opening a terminal", you should open Git Bash, which was installed during the initial setup lesson. Git Bash emulates a Unix-y environment on your Windows machine, meaning that as long as you're programming in this terminal, you can basically follow along with everything we're doing here. Pretty sweet!
 
-![git bash](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/git_bash.png)
+![git bash](http://curriculum-content.s3.amazonaws.com/javacs/git_bash.png)
 
 ## Opening a Lab
 
@@ -27,7 +27,7 @@ Whenever we refer to "opening a terminal", you should open Git Bash, which was i
 Getting to work on a new lab is very simple: you'll want to click the "Fork" button on the `learn-co-students` repository, fork a copy to your personal GitHub, and clone from your fork.
 
 The "Fork" button should look something like this:
-![Fork button](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/fork_button.png)
+![Fork button](http://curriculum-content.s3.amazonaws.com/javacs/fork_button.png)
 
 Then `git clone git@github.com:your-usernmame/the-forked-repo.git`
 
@@ -55,7 +55,7 @@ Read the lab's README on Learn and get a sense of what the lab is about and what
 
 Before doing any work, run the test suite from your local clone with the `learn` or `learn-test` CLI command. From your terminal, in a lab's directory, run `learn-test`, you'll see something similar to:
 
-![test](https://github.com/learn-co-curriculum/learn-workflow-java-cs/blob/master/test_command.png)
+![test](http://curriculum-content.s3.amazonaws.com/javacs/test_command.png)
 
 I know error messages or failure messages are intimidating, but try to read them. Developers are detectives, constantly sleuthing for the bug that's the culprit. Errors and failures are our clues, they illuminate the path forward.
 
